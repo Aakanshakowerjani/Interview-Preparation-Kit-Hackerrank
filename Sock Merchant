@@ -1,0 +1,11 @@
+n=int(input())
+s=list(map(int,input().split()))
+sum=0
+for i in set(s):
+    if s.count(i) %2==0:
+        sum+=s.count(i)/2
+    else:
+        if s.count(i)>=3:
+            sum+=(s.count(i)-1)/2
+
+print(int(sum))
